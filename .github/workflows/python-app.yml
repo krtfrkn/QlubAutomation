@@ -14,8 +14,8 @@ jobs:
 
     runs-on: ubuntu-latest
     services:
--      selenium:
--        image: selenium/standalone-chrome
+-     selenium:
+-       image: selenium/standalone-chrome
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.8.10
