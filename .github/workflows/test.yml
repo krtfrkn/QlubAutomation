@@ -1,0 +1,26 @@
+name: Test
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.8.10
+      - run: python3 install --no-save @testmo/testmo-cli
+      - run: |
+          npx testmo automation:run:submit \
+            --instance $TESTMO_URL \
+            --project-id 2 \
+            --name "Selenium with Pytest" \
+            --source "customer-app" \
+            --results results/*.xml \
+            -- python3 run pytest # Note space after --
+        env:
+          TESTMO_URL: ${{ secrets.https://qlub.testmo.net }}
+          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN=testmo_api_eyJpdiI6Ik5XLzZiWG42ZXZsTlhCVld6QTBSZVE9PSIsInZhbHVlIjoiNmt0Z3BTODlPalJCcG15MW4xMnRobDhwa3E1TlZvNWE1UHdTQTBOOXJFST0iLCJtYWMiOiI1MTdiZGU1Zjc5OTUxNDEyZDQxYWFmNGMzNmFjYjhmNGE0NzlmZmM4MjFiZWU5NTdhMjEzYzExZTgyNjc5OGJmIiwidGFnIjoiIn0= }}
