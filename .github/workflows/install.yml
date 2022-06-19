@@ -22,6 +22,10 @@ jobs:
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Install software
+        run: wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+        tar -xvzf geckodriver*
+        chmod +x geckodriver
+        sudo mv geckodriver /usr/local/bin/
         run: sudo apt-get install -y chromium-browser
       - name: Install all necessary packages
         run: pip install requests beautifulsoup4 pandas webdriver-manager selenium 
