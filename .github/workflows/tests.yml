@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      - run: npm ci
       - run: npm install --no-save @testmo/testmo-cli
       - run: |
           npx testmo automation:run:submit \
@@ -22,7 +21,7 @@ jobs:
             --name "Pytest" \
             --source "tests" \
             --results results/*.xml \
-            -- npm run pytest # Note space after --
+            -- pytest # Note space after --
         env:
           TESTMO_URL: ${{ secrets.TESTMO_URL }}
           TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
