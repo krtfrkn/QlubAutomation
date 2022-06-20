@@ -1,4 +1,3 @@
-// package.json
 {
   "scripts": {
     "mocha": "node_modules/mocha/bin/mocha",
