@@ -22,5 +22,5 @@ jobs:
             --source "test" \
             --results results/*.xml
         env:
-          TESTMO_URL: ${{ secrets.TESTMO_URL }}
-          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+          TESTMO_URL: ${env.yml}
+          TESTMO_TOKEN: ${env.yml}
