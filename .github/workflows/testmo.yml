@@ -21,9 +21,6 @@ jobs:
             --name "GitHub-Action" \
             --source "test" \
             --results results/*.xml
-
-      - name: Secret Token
-        with: # Set the secret as an input
-          super_secret: ${{ secrets.TESTMO_URL }}
-        env: # Or as an environment variable
-          super_secret: ${{ secrets.TESTMO_TOKEN }}
+        env:
+          TESTMO_URL: ${{ secrets.TESTMO_URL }}
+          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
