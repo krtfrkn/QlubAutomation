@@ -16,7 +16,7 @@ jobs:
       - run: npm install --no-save @testmo/testmo-cli
       - run: |
           npx testmo automation:run:submit \
-            --instance https://qlub.testmo.net \
+            --instance $TESTMO_URL \
             --project-id 2 \
             --name "GitHub-Action" \
             --source "test" \
