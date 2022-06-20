@@ -18,9 +18,9 @@ jobs:
           npx testmo automation:run:submit \
             --instance $TESTMO_URL \
             --project-id 2 \
-            --name "GitHub Action" \
-            --source "tests" \
-            --results /home/sasan/testmo/results/* \
+            --name "GitHub-Action" \
+            --source "test" \
+            --results results/*.xml \
             -- pytest # Note space after --
         env:
           TESTMO_URL: ${{ secrets.TESTMO_URL }}
