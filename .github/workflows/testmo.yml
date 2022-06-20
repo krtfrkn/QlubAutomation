@@ -22,5 +22,5 @@ jobs:
             --source "test" \
             --results results/*.xml \
         env:
-          TESTMO_URL: ${{ secrets.TESTMO_URL }}
-          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+          TESTMO_URL: https://qlub.testmo.net
+          TESTMO_TOKEN: testmo_api_eyJpdiI6Ik5XLzZiWG42ZXZsTlhCVld6QTBSZVE9PSIsInZhbHVlIjoiNmt0Z3BTODlPalJCcG15MW4xMnRobDhwa3E1TlZvNWE1UHdTQTBOOXJFST0iLCJtYWMiOiI1MTdiZGU1Zjc5OTUxNDEyZDQxYWFmNGMzNmFjYjhmNGE0NzlmZmM4MjFiZWU5NTdhMjEzYzExZTgyNjc5OGJmIiwidGFnIjoiIn0=
