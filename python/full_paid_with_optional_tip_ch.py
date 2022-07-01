@@ -12,7 +12,7 @@ def test_qr():
     global driver
     driver = webdriver.Chrome('/home/sasan/Documents/Python/chromedriver')
     #Run Test With One Participant [Partial Paid]
-    location = ('https://app-staging.qlub.cloud/qr/ae/dummy-checkout/7/_/_/9f27090e5b')
+    location = ('https://app-staging.qlub.cloud/qr/ae/dummy-checkout/85/_/_/72f9853c00')
     driver.get(location)
     sleep(10)
 
@@ -43,11 +43,10 @@ def test_set_amount():
     #Add Tip Optional
 
 
-def test_optional_tip():    
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div[3]/div/div/div/div[2]/div/div/div[4]/button').click()
+def test_optional_tip():   
+    driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div[3]/div/div/div/div[2]/div/div/div[4]/button').click()
     driver.find_element(By.CLASS_NAME, 'Tips_tipInput__tWifa').send_keys('20')
     sleep(5)
-    #Enter Visa Card Number
 
 
 def test_checkout():    
@@ -71,21 +70,6 @@ def test_pay():
     #Click On Pay Now
     driver.find_element(By.XPATH, '//*[@id="checkout-action-btn"]').click()
     sleep(15)
-
-
-def test_rate():    
-    #Select Rate
-    driver.find_element(By.CLASS_NAME, "css-ykqdxu").click()
-    sleep(3)
-
-
-def test_email():    
-    driver.find_element(By.NAME, "email").send_keys("sasan@qlub.io")
-    sleep(2)
-    #Click On Send
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div/div[2]/form/div/div[2]/div/div/div/button').click()
-    sleep(2)
-
 
     
 def test_finish():

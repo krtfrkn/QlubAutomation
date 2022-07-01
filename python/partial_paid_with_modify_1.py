@@ -65,7 +65,7 @@ def test_checkout():
 
     #Click On Refresh button
 def test_refresh_button():    
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div[1]/div/div[1]/div/div/div/button').click() 
+    driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div[1]/div/div[1]/div/div/div/button').click() 
     sleep(15)
 
 
@@ -74,13 +74,6 @@ def test_pay():
     driver.find_element(By.XPATH, '//*[@id="checkout-action-btn"]').click()
     sleep(10)
 
-
-def test_email():    
-    driver.find_element(By.NAME, "email").send_keys("sasan@qlub.io")
-    sleep(2)
-    #Click On Send
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div/div[2]/form/div/div[2]/div/div/div/button').click()
-    sleep(2)
 
     
     sleep(5)
