@@ -11,20 +11,28 @@ import pytest
 
 def test_qr():
     global driver
-    #Run Test With One Participant [Full Paid]
+    #Run Test With One Participant [Full Paid + Change English To Japanese]
     driver = webdriver.Chrome('/home/sasan/Documents/Python/chromedriver')
     #Add restaurant link
-    location = ('https://app-staging.qlub.cloud/qr/ae/dummy/15/_/_/a9a3cbf61b')
+    location = ('https://app-staging.qlub.cloud/qr/ae/dummy/80/_/_/a868cf40f6')
     driver.get(location)
-    sleep(10)
-    
-    
-    #Fetch Order
-def test_fetch_order(): 
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div/div[3]/div').click()
-    sleep(20)
+    sleep(15)
 
-def test_stripe():
+
+def test_fetch_order():    
+    #Fetch order
+    driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div/div[3]/div').click()
+    sleep(10)
+
+
+def test_language():    
+    driver.find_element(By.XPATH, '//*[@id="__next"]/div[3]/div[3]/div/div/div').click()
+    sleep(2)
+    driver.find_element(By.XPATH, '//*[@id="menu-"]/div[3]/ul/li[2]').click()
+    sleep(5)
+
+
+def test_stipe():    
     #Enter Card Number
     driver.switch_to.frame(frame_reference=driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div[3]/div/div/div/div[4]/div/div/div/div/form/div[1]/div[1]/div/iframe'))
     driver.find_element(By.NAME, "number").send_keys("4242424242424242")
@@ -34,7 +42,7 @@ def test_stripe():
     driver.switch_to.frame(frame_reference=driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div[3]/div/div/div/div[4]/div/div/div/div/form/div[1]/div[1]/div/iframe'))
     expiryDate = driver.find_element(By.NAME, "expiry").send_keys("1230")
     driver.switch_to.default_content()
-    sleep(3)
+    sleep(5)
     #Enter CVC
     driver.switch_to.frame(frame_reference=driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div[3]/div/div/div/div[4]/div/div/div/div/form/div[1]/div[1]/div/iframe'))
     cvc = driver.find_element(By.NAME, "cvc").send_keys("100")
@@ -45,11 +53,9 @@ def test_stripe():
 def test_pay():    
     #Click On Pay Now
     driver.find_element(By.ID, 'stripe-action-btn').click()
-    sleep(15)
-
-
+    sleep(10)
 
     
-def test_finish():
+def test_finish():    
     driver.quit()
     print('Successful Test')
