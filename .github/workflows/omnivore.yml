@@ -1,0 +1,28 @@
+name: Omnivore automation
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: npm
+      - run: npm install --no-save @testmo/testmo-cli
+      - run: |
+          npx testmo automation:run:submit \
+            --instance https://qlub.testmo.net \
+            --project-id 2 \
+            --name "Omnivore Automated" \
+            --source "critica-functionality" \
+            --results omnivore-results/*.xml
+            
+        env:
+          TESTMO_URL: ${{ secrets.TESTMO_URL }}
+          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+
