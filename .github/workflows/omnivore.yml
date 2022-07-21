@@ -18,9 +18,9 @@ jobs:
           npx testmo automation:run:submit \
             --instance https://qlub.testmo.net \
             --project-id 2 \
-            --name "Omnivore Automated" \
-            --source "critica-functionality" \
-            --results omnivore-results/*.xml
+            --name "Omnivore Automated Phase2" \
+            --source "critical-functionality" \
+            --results omnivore-results/result1*.xml
             
         env:
           TESTMO_URL: ${{ secrets.TESTMO_URL }}
