@@ -20,7 +20,7 @@ jobs:
             --project-id 2 \
             --name "GitHub-Action" \
             --source "test" \
-            --results results/*.xml
+            --results result-release/*.xml
         env:
           TESTMO_URL: ${{ secrets.TESTMO_URL }}
           TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
