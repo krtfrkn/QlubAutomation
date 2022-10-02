@@ -18,8 +18,8 @@ jobs:
           npx testmo automation:run:submit \
             --instance https://qlub.testmo.net \
             --project-id 2 \
-            --name "GitHub-Action" \
-            --source "test" \
+            --name "Easy splitting automation" \
+            --source "customer-app" \
             --results result-release/*.xml
         env:
           TESTMO_URL: ${{ secrets.TESTMO_URL }}
