@@ -1,0 +1,257 @@
+1655026480037	geckodriver	INFO	Listening on 127.0.0.1:35257
+1655026480525	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37797" "-no-remote" "-profile" "/tmp/rust_mozprofilerCWUI8"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655026481378	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerCWUI8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37797/devtools/browser/4d303375-c42b-4664-91e1-3daf15999f18
+1655026482293	Marionette	INFO	Listening on port 36179
+1655026482348	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655026503811	Marionette	INFO	Stopped listening on port 36179
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655026504509	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1655026531194	geckodriver	INFO	Listening on 127.0.0.1:45287
+1655026531699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54269" "-no-remote" "-profile" "/tmp/rust_mozprofile3SSD1P"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655026532382	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3SSD1P/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54269/devtools/browser/5ecef0ee-78d9-4bfe-be7b-31b8bbd07f13
+1655026533295	Marionette	INFO	Listening on port 43437
+1655026533313	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655026571977	Marionette	INFO	Stopped listening on port 43437
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1655026578150	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1655026644179	geckodriver	INFO	Listening on 127.0.0.1:48929
+1655026644692	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39863" "-no-remote" "-profile" "/tmp/rust_mozprofiley5wA3z"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655026645386	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiley5wA3z/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39863/devtools/browser/be749654-afcf-43d6-a31d-cebf3a11088f
+1655026646246	Marionette	INFO	Listening on port 44137
+1655026646333	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://app-staging.qlub.cloud"
+1655026762192	Marionette	INFO	Stopped listening on port 44137
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1655026892954	geckodriver	INFO	Listening on 127.0.0.1:54723
+1655026893466	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45309" "-no-remote" "-profile" "/tmp/rust_mozprofile3IlohZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655026894225	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3IlohZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45309/devtools/browser/72117cc3-ee19-41b7-ad97-b2696c260ce2
+1655026895180	Marionette	INFO	Listening on port 42487
+1655026895300	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655026896324	Marionette	INFO	Stopped listening on port 42487
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1655026897420	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1655026914708	geckodriver	INFO	Listening on 127.0.0.1:38305
+1655026914710	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59749" "-no-remote" "-profile" "/tmp/rust_mozprofileSUw1BC"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655026915498	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSUw1BC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59749/devtools/browser/76469d69-4c25-4c04-8b11-b7b8f71bdd5a
+1655026916470	Marionette	INFO	Listening on port 46025
+1655026916535	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://app-staging.qlub.cloud"
+1655027027312	Marionette	INFO	Stopped listening on port 46025
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1655033642001	geckodriver	INFO	Listening on 127.0.0.1:52851
+1655033642006	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49489" "-no-remote" "-profile" "/tmp/rust_mozprofileBnnjXk"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655033642813	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBnnjXk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49489/devtools/browser/5b91a470-2e50-4e7e-b717-c2b5b43db884
+1655033643649	Marionette	INFO	Listening on port 41619
+1655033643722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://app-staging.qlub.cloud"
+1655033745070	Marionette	INFO	Stopped listening on port 41619
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1655034051152	geckodriver	INFO	Listening on 127.0.0.1:48577
+1655034051155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36707" "-no-remote" "-profile" "/tmp/rust_mozprofileJrJbuG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655034051926	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJrJbuG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36707/devtools/browser/697d42ce-0794-41b0-b497-c8bb4d10c005
+1655034052757	Marionette	INFO	Listening on port 43599
+1655034052771	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://app-staging.qlub.cloud"
+1655034139934	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1655034155221	Marionette	INFO	Stopped listening on port 43599
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1655040932114	geckodriver	INFO	Listening on 127.0.0.1:60913
+1655040932626	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49117" "-no-remote" "-profile" "/tmp/rust_mozprofiletB6tOR"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655040933318	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletB6tOR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49117/devtools/browser/c3e649ce-5595-45df-b2c8-03ac755b9338
+1655040934223	Marionette	INFO	Listening on port 35005
+1655040934239	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655041048893	Marionette	INFO	Stopped listening on port 35005
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655044747801	geckodriver	INFO	Listening on 127.0.0.1:53167
+1655044748313	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47985" "-no-remote" "-profile" "/tmp/rust_mozprofilemQUOy4"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655044749034	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemQUOy4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47985/devtools/browser/2a1573b7-36b5-483e-a59e-24fabb1d6042
+1655044750198	Marionette	INFO	Listening on port 35727
+1655044750226	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655044812219	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1655045537698	Marionette	INFO	Stopped listening on port 35727
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656574625169	geckodriver	INFO	Listening on 127.0.0.1:43985
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/libreoffice/help /usr/share/libreoffice/help none bind,ro 0 0): cannot create directory "/usr/share/libreoffice/help": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+1656574626361	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44597" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHxLTCR"
+Gtk-Message: 12:07:06.559: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:07:06.562: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656575421178	geckodriver	INFO	Listening on 127.0.0.1:37837
+1656575422046	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51765" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqGX3cW"
+Gtk-Message: 12:20:22.213: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:20:22.214: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576230709	geckodriver	INFO	Listening on 127.0.0.1:49147
+1656576231414	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45601" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0FNF4N"
+Gtk-Message: 12:33:51.585: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:33:51.586: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576399283	geckodriver	INFO	Listening on 127.0.0.1:60949
+1656576400154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50397" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEoRgRO"
+Gtk-Message: 12:36:40.356: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:36:40.357: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576490114	geckodriver	INFO	Listening on 127.0.0.1:33995
+1656576490842	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37441" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile6Yb2Cw"
+Gtk-Message: 12:38:11.044: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:38:11.045: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576600137	geckodriver	INFO	Listening on 127.0.0.1:42141
+1656576600830	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42855" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTkIyA7"
+Gtk-Message: 12:40:01.012: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:40:01.013: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576631222	geckodriver	INFO	Listening on 127.0.0.1:58729
+1656576631874	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46175" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiles9p2hM"
+Gtk-Message: 12:40:32.058: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:40:32.059: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576659923	geckodriver	INFO	Listening on 127.0.0.1:44839
+1656576660559	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56255" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileou4JeU"
+Gtk-Message: 12:41:00.710: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:41:00.711: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576743555	geckodriver	INFO	Listening on 127.0.0.1:58039
+1656576744181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48965" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepJLqv2"
+Gtk-Message: 12:42:24.347: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:42:24.349: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656576829982	geckodriver	INFO	Listening on 127.0.0.1:47467
+1656576830623	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35597" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXpXvUp"
+Gtk-Message: 12:43:50.787: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:43:50.788: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1656577070775	geckodriver	INFO	Listening on 127.0.0.1:54395
+1656577071622	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47409" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebDiVUB"
+Gtk-Message: 12:47:51.878: Failed to load module "canberra-gtk-module"
+Gtk-Message: 12:47:51.879: Failed to load module "canberra-gtk-module"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
