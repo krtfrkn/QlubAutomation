@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="96.063" timestamp="2023-03-02T16:09:37.444730" hostname="sezais-MacBook-Pro.local"><testcase classname="Restaurant_Create_Delete" name="test_login" time="95.961" /></testsuite></testsuites>
