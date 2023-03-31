@@ -11,7 +11,7 @@ def test_tuna():
     global driver
     driver = webdriver.Chrome()
     driver.maximize_window()
-    location = ('https://app-staging.qlub.cloud/qr/br/dummyTunaSezai/3/_/_/01c143952a')
+    location = ('https://app-staging.qlub.cloud/qr/br/dummyTunaSezai/8/_/_/b83025ccba')
     driver.get(location)
     sleep(9)
 
@@ -19,7 +19,26 @@ def test_tuna():
     driver.find_element(By.XPATH,'//span[@class="wrapper"]/span').click()
     sleep(10)
 
-    #EnterCardInformations
+    #SplitBill
+    #Split
+    driver.find_element(By.XPATH,'//span[@class="wrapper"][.="Split bill"]').click()
+    sleep(3)
+    #ClickCustom
+    driver.find_element(By.ID,'select-custom').click()
+    sleep(3)
+    #AddAmount
+    driver.find_element(By.XPATH,'//*[@id="fullWidth"]').send_keys('5')
+    sleep(4)
+    #ConfirmSplitt
+    driver.find_element(By.ID,'split-bill').click()
+    sleep(5)
+
+    # AddTip
+    driver.find_element(By.XPATH, '(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
+    sleep(4)
+
+
+    #EnterCardInformation
     #Card HolderName
     driver.find_element(By.ID,':r2:').send_keys('Captured')
     sleep(3)
@@ -27,10 +46,10 @@ def test_tuna():
     driver.find_element(By.ID,':r3:').send_keys('4111111111111111')
     sleep(3)
     #ExpiryDate
-    driver.find_element(By.ID,':r4:').send_keys('1128')
+    driver.find_element(By.ID,':r4:').send_keys('1129')
     sleep(3)
     #CVV
-    driver.find_element(By.ID,':r5:').send_keys('222')
+    driver.find_element(By.ID,':r5:').send_keys('224')
     sleep(5)
 
     #ClickOnPayNow

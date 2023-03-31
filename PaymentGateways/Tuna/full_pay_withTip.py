@@ -11,7 +11,7 @@ def test_tuna():
     global driver
     driver = webdriver.Chrome()
     driver.maximize_window()
-    location = ('https://app-staging.qlub.cloud/qr/br/dummyTunaSezai/3/_/_/01c143952a')
+    location = ('https://app-staging.qlub.cloud/qr/br/dummyTunaSezai/4/_/_/37b61f25bb')
     driver.get(location)
     sleep(9)
 
@@ -19,12 +19,16 @@ def test_tuna():
     driver.find_element(By.XPATH,'//span[@class="wrapper"]/span').click()
     sleep(10)
 
+    #AddTip
+    driver.find_element(By.XPATH,'(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
+    sleep(4)
+
     #EnterCardInformations
     #Card HolderName
     driver.find_element(By.ID,':r2:').send_keys('Captured')
     sleep(3)
     #CardNumber
-    driver.find_element(By.ID,':r3:').send_keys('4111111111111111')
+    driver.find_element(By.ID,':r3:').send_keys('5555555555554444')
     sleep(3)
     #ExpiryDate
     driver.find_element(By.ID,':r4:').send_keys('1128')
