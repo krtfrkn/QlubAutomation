@@ -14,32 +14,33 @@ def test_qr():
     driver.get(location)
     sleep(10)
 
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+    #fetchOrder
+    driver.find_element(By.XPATH,'//span[@class="wrapper"]/span').click()
     sleep(10)
 
     #AddTip
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[1]/div[2]/div/div[1]').click()
+    driver.find_element(By.XPATH,'(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
     sleep(5)
 
-    # Enter card number
+    # EnterCardNumber
     driver.switch_to.frame("cardNumber")
     driver.find_element(By.XPATH, '//*[@id="checkout-frames-card-number"]').send_keys('5436031030606378')
     driver.switch_to.default_content()
     sleep(2)
 
-    # Enter ExpiryDate
+    # EnterExpiryDate
     driver.switch_to.frame("expiryDate")
     driver.find_element(By.XPATH, '//*[@id="checkout-frames-expiry-date"]').send_keys('1030')
     driver.switch_to.default_content()
     sleep(1)
 
-    # Enter Cvv
+    # EnterCvv
     driver.switch_to.frame("cvv")
     driver.find_element(By.XPATH, '//*[@id="checkout-frames-cvv"]').send_keys('100')
     driver.switch_to.default_content()
     sleep(3)
 
-    # Click On Pay Now
+    # ClickOnPayNow
     driver.find_element(By.ID,'checkout-action-btn').click()
     sleep(25)
 
