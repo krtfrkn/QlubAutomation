@@ -8,7 +8,7 @@ import pytest
 
 def test_qr():
     global driver
-    driver = webdriver.Chrome('/home/sasan/Documents/Python/chromedriver')
+    driver = webdriver.Chrome()
     location = ('https://app-staging.qlub.cloud/qr/ae/dummy-checkout/76/_/_/bd8d756533')
     driver.get(location)
     sleep(10)

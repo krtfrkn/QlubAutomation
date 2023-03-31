@@ -9,15 +9,15 @@ import pytest
 
 def test_qr():
     global driver
-    driver = webdriver.Chrome('/home/sasan/Documents/Python/chromedriver')
-    location = ('https://app-staging.qlub.cloud/qr/ae/dummy-checkout/77/_/_/3a3d804948')
+    driver = webdriver.Chrome()
+    location = ('https://app-staging.qlub.cloud/qr/ae/dummyCheckoutSezai/1/_/_/7502305668')
     driver.get(location)
     sleep(10)
 
 
     #Fetch Order
 def test_fetch_order(): 
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[1]/div/div/div[3]/div').click()
+    driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]/span[2]').click()
     sleep(10)
 
 
