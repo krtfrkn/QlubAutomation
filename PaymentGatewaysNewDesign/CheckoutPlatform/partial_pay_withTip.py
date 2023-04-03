@@ -14,49 +14,45 @@ def test_qr():
     driver.get(location)
     sleep(10)
 
-    #fetchorder
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
     sleep(10)
 
-    #Splitbill
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[2]/div/div[2]/div[2]/button[1]').click()
+    # SplitBill
+    # Split
+    driver.find_element(By.XPATH, '//span[@class="wrapper"][.="Split bill"]').click()
     sleep(3)
-
-    #PayCustom
+    # ClickCustom
     driver.find_element(By.ID, 'select-custom').click()
+    sleep(3)
+    # AddAmount
+    driver.find_element(By.XPATH, '//*[@id="fullWidth"]').send_keys('5')
     sleep(4)
-
-    driver.find_element(By.NAME, 'amount').send_keys('5')
-    sleep(4)
-
-    driver.find_element(By.ID,'split-bill').click()
-    sleep(4)
-
-    # AddTip
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[1]/div[2]/div/div[1]').click()
+    # ConfirmSplitt
+    driver.find_element(By.ID, 'split-bill').click()
     sleep(5)
 
-    # Enter card number
-    driver.switch_to.frame("cardNumber")
-    driver.find_element(By.XPATH, '//*[@id="checkout-frames-card-number"]').send_keys('5436031030606378')
-    driver.switch_to.default_content()
-    sleep(2)
+    # AddTip
+    driver.find_element(By.XPATH, '(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
+    sleep(4)
 
-    # Enter ExpiryDate
-    driver.switch_to.frame("expiryDate")
-    driver.find_element(By.XPATH, '//*[@id="checkout-frames-expiry-date"]').send_keys('1030')
-    driver.switch_to.default_content()
-    sleep(1)
-
-    # Enter Cvv
-    driver.switch_to.frame("cvv")
-    driver.find_element(By.XPATH, '//*[@id="checkout-frames-cvv"]').send_keys('100')
-    driver.switch_to.default_content()
+    # EnterCardInformation
+    # Card HolderName
+    driver.find_element(By.ID, ':r2:').send_keys('Captured')
     sleep(3)
+    # CardNumber
+    driver.find_element(By.ID, ':r3:').send_keys('4111111111111111')
+    sleep(3)
+    # ExpiryDate
+    driver.find_element(By.ID, ':r4:').send_keys('1129')
+    sleep(3)
+    # CVV
+    driver.find_element(By.ID, ':r5:').send_keys('224')
+    sleep(5)
 
-    # Click On Pay Now
-    driver.find_element(By.ID, 'checkout-action-btn').click()
-    sleep(25)
+    # ClickOnPayNow
+    driver.find_element(By.ID, 'tuna-card-pay-button').click()
+    sleep(35)
 
     driver.quit()
     print('Successfull Payment')

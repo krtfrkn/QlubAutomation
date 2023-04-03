@@ -14,29 +14,29 @@ def test_qr():
     driver.get(location)
     sleep(10)
 
-    #fetchOrder
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
     sleep(10)
 
-    # Enter visa card
+    # EnterCardNumber
     driver.switch_to.frame("cardNumber")
     driver.find_element(By.XPATH, '//*[@id="checkout-frames-card-number"]').send_keys('4242424242424242')
     driver.switch_to.default_content()
     sleep(2)
 
-    # Enter ExpiryDate
+    # EnterExpiryDate
     driver.switch_to.frame("expiryDate")
     driver.find_element(By.XPATH, '//*[@id="checkout-frames-expiry-date"]').send_keys('1030')
     driver.switch_to.default_content()
     sleep(1)
 
-    # Enter Cvv
+    # EnterCvv
     driver.switch_to.frame("cvv")
     driver.find_element(By.XPATH, '//*[@id="checkout-frames-cvv"]').send_keys('100')
     driver.switch_to.default_content()
     sleep(3)
 
-    # Click On Pay Now
+    # ClickOnPayNow
     driver.find_element(By.ID,'checkout-action-btn').click()
     sleep(25)
 

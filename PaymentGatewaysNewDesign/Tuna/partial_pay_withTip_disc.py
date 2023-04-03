@@ -33,7 +33,7 @@ def test_tuna():
     driver.find_element(By.ID,'split-bill').click()
     sleep(5)
 
-    # AddTip
+    #AddTip
     driver.find_element(By.XPATH, '(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
     sleep(4)
 
