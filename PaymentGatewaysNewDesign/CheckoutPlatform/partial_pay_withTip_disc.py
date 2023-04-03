@@ -37,22 +37,26 @@ def test_qr():
     sleep(4)
 
     # EnterCardInformation
-    # Card HolderName
-    driver.find_element(By.ID, ':r2:').send_keys('Captured')
+    driver.switch_to.frame("cardNumber")
+    driver.find_element(By.XPATH, '//*[@id="checkout-frames-card-number"]').send_keys('5436031030606378')
+    driver.switch_to.default_content()
+    sleep(2)
+
+    # EnterExpiryDate
+    driver.switch_to.frame("expiryDate")
+    driver.find_element(By.XPATH, '//*[@id="checkout-frames-expiry-date"]').send_keys('1030')
+    driver.switch_to.default_content()
+    sleep(1)
+
+    # EnterCvv
+    driver.switch_to.frame("cvv")
+    driver.find_element(By.XPATH, '//*[@id="checkout-frames-cvv"]').send_keys('100')
+    driver.switch_to.default_content()
     sleep(3)
-    # CardNumber
-    driver.find_element(By.ID, ':r3:').send_keys('4111111111111111')
-    sleep(3)
-    # ExpiryDate
-    driver.find_element(By.ID, ':r4:').send_keys('1129')
-    sleep(3)
-    # CVV
-    driver.find_element(By.ID, ':r5:').send_keys('224')
-    sleep(5)
 
     # ClickOnPayNow
-    driver.find_element(By.ID, 'tuna-card-pay-button').click()
-    sleep(35)
+    driver.find_element(By.ID, 'checkout-action-btn').click()
+    sleep(25)
 
     driver.quit()
     print('Successfull Payment')
