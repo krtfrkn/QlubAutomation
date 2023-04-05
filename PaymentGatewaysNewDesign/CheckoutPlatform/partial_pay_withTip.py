@@ -10,7 +10,7 @@ def test_qr():
     global driver
     driver = webdriver.Chrome()
     driver.maximize_window()
-    location = ('https://app-staging.qlub.cloud/qr/ae/SezaiChckPltfmDisc/7/_/_/1e42b1af2d')
+    location = ('https://app-staging.qlub.cloud/qr/gb/dummyChkPlatfrmSezai/7/_/_/889ad64632')
     driver.get(location)
     sleep(10)
 

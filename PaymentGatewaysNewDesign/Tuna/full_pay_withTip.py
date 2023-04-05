@@ -37,6 +37,10 @@ def test_tuna():
     driver.find_element(By.ID,':r5:').send_keys('222')
     sleep(5)
 
+    # ScrollDownPage
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    sleep(3)
+
     #ClickOnPayNow
     driver.find_element(By.ID,'tuna-card-pay-button').click()
     sleep(35)

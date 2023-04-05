@@ -13,7 +13,7 @@ def test_qr():
     driver = webdriver.Chrome('/home/sasan/Documents/Python/chromedriver')
     driver.maximize_window()
 
-    location = ('https://app-staging.qlub.cloud/qr/sa/SezaiMoyasarDiscount/3/_/_/ae2e642d1a')
+    location = ('https://app-staging.qlub.cloud/qr/sa/dummyMoyasarSezai/6/_/_/7c069773f5')
     driver.get(location)
     sleep(10)
 
