@@ -32,6 +32,9 @@ def test_qr():
     driver.find_element(By.NAME,'securityCode').send_keys("100")
     sleep(2)
 
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    sleep(3)
+
     # Click On Pay Now
     driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[5]/div/button').click()
     sleep(35)

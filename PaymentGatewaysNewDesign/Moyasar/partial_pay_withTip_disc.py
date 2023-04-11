@@ -32,8 +32,8 @@ def test_qr():
     driver.find_element(By.ID,'split-bill').click()
 
     # AddTip
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[1]/div[2]/div/div[1]').click()
-    sleep(5)
+    driver.find_element(By.XPATH, '(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
+    sleep(4)
 
     # Enter card info
     driver.find_element(By.ID, "mysr-cc-name").send_keys("Sezai Bayhan")

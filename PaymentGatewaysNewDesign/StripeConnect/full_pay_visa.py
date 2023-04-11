@@ -13,8 +13,9 @@ def test_qr():
     location = ('https://app-staging.qlub.cloud/qr/br/dummyStripeconnectSezai/2/_/_/002007dadc')
     driver.get(location)
     sleep(10)
-    #fetchOrder
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
     sleep(10)
 
     # Enter Card Number
@@ -31,9 +32,9 @@ def test_qr():
     driver.switch_to.default_content()
     sleep(5)
 
-    # Click On Pay Now
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[2]').click()
-    sleep(30)
+    # ClickOnPayNow
+    driver.find_element(By.ID, 'tuna-card-pay-button').click()
+    sleep(35)
 
     driver.quit()
     print('Successfull Payment')
