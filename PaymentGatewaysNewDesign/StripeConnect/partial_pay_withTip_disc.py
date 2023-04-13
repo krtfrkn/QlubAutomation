@@ -14,27 +14,27 @@ def test_qr():
     driver.get(location)
     sleep(10)
 
-    #fetchOrder
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
     sleep(10)
 
-    # Splitbill
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[2]/div/div[2]/div[2]/button[1]').click()
+    # SplitBill
+    # Split
+    driver.find_element(By.XPATH, '//span[@class="wrapper"][.="Split bill"]').click()
     sleep(3)
-
-    # PayCustom
+    # ClickCustom
     driver.find_element(By.ID, 'select-custom').click()
-    sleep(4)
-
-    driver.find_element(By.NAME, 'amount').send_keys('5')
-    sleep(4)
-
-    driver.find_element(By.ID, 'split-bill').click()
-    sleep(4)
-
-    #AddTip
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[1]/div[2]/div/div[1]/div').click()
     sleep(3)
+    # AddAmount
+    driver.find_element(By.XPATH, '//*[@id="fullWidth"]').send_keys('5')
+    sleep(4)
+    # ConfirmSplitt
+    driver.find_element(By.ID, 'split-bill').click()
+    sleep(5)
+
+    # AddTip
+    driver.find_element(By.XPATH, '(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
+    sleep(4)
 
     # Enter Card Number
     driver.switch_to.frame(driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[1]/div[1]/div/iframe'))

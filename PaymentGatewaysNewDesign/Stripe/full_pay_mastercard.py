@@ -14,7 +14,8 @@ def test_qr():
     driver.get(location)
     sleep(10)
 
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
     sleep(10)
 
     # Enter Card Number
@@ -32,8 +33,8 @@ def test_qr():
     sleep(5)
 
     # Click On Pay Now
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[2]').click()
-    sleep(35)
+    driver.find_element(By.XPATH,'//span[normalize-space()="Pay Now"]').click()
+    sleep(15)
 
     driver.quit()
     print('Successfull Payment')

@@ -17,22 +17,22 @@ def test_qr():
     driver.get(location)
     sleep(10)
 
-    # Fetch Order
-    driver.find_element(By.XPATH, '//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
-    sleep(7)
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
+    sleep(10)
 
-    #AddTip
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[1]/div[2]/div/div[1]/div/div').click()
-    sleep(3)
+    # AddTip
+    driver.find_element(By.XPATH, '(//div[@class="Tips_tips__9J2Ze"]/div/div)[1]').click()
+    sleep(4)
 
     # Enter card info
     driver.find_element(By.ID, "mysr-cc-name").send_keys("Sezai Bayhan")
     driver.find_element(By.ID, "mysr-cc-number").send_keys("4111111111111111")
-    driver.find_element(By.XPATH,'//*[@id="mysr-form-form-el"]/div[2]/div/form/div[2]/div[2]/div[2]/input[1]').send_keys("12/26")
-    driver.find_element(By.XPATH,'//*[@id="mysr-form-form-el"]/div[2]/div/form/div[2]/div[2]/div[2]/input[2]').send_keys("100")
+    driver.find_element(By.XPATH,
+                        '//*[@id="mysr-form-form-el"]/div[2]/div/form/div[2]/div[2]/div[2]/input[1]').send_keys("12/26")
+    driver.find_element(By.XPATH,
+                        '//*[@id="mysr-form-form-el"]/div[2]/div/form/div[2]/div[2]/div[2]/input[2]').send_keys("100")
     sleep(5)
-
-
 
     # Click On Pay Now
     driver.find_element(By.XPATH, '//*[@id="mysr-form-form-el"]/div[2]/div/form/button').click()
@@ -42,4 +42,4 @@ def test_qr():
     sleep(3)
 
     driver.find_element(By.XPATH, '/html/body/div/div/section[3]/form/div[2]/button[1]').click()
-    sleep(35)
+    sleep(15)

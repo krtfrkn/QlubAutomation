@@ -10,7 +10,7 @@ def test_qr():
     global driver
     driver = webdriver.Chrome()
     driver.maximize_window()
-    location = ('https://app-staging.qlub.cloud/qr/br/dummyStripeconnectSezai/3/_/_/2734831097')
+    location = ('https://app-staging.qlub.cloud/qr/br/dummyStripeconnectSezai/30/_/_/1cab967199')
     driver.get(location)
     sleep(10)
 
@@ -23,22 +23,25 @@ def test_qr():
     sleep(4)
 
     # Enter Card Number
-    driver.switch_to.frame(driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[1]/div[1]/div/iframe'))
-    driver.find_element(By.XPATH,'//*[@id="Field-numberInput"]').send_keys("5555555555554444")
+    driver.switch_to.frame(driver.find_element(By.XPATH,
+                                               '//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[1]/div[1]/div/iframe'))
+    driver.find_element(By.XPATH, '//*[@id="Field-numberInput"]').send_keys("5555555555554444")
     driver.switch_to.default_content()
     # Enter Expiry Date
-    driver.switch_to.frame(driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[1]/div[1]/div/iframe'))
-    driver.find_element(By.XPATH,'//*[@id="Field-expiryInput"]').send_keys("1130")
+    driver.switch_to.frame(driver.find_element(By.XPATH,
+                                               '//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[1]/div[1]/div/iframe'))
+    driver.find_element(By.XPATH, '//*[@id="Field-expiryInput"]').send_keys("1130")
     driver.switch_to.default_content()
     # Enter CVC
-    driver.switch_to.frame(driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[1]/div[1]/div/iframe'))
-    driver.find_element(By.XPATH,'//*[@id="Field-cvcInput"]').send_keys("100")
+    driver.switch_to.frame(driver.find_element(By.XPATH,
+                                               '//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[1]/div/div/div/div/div[2]/form/div[1]/div[1]/div/iframe'))
+    driver.find_element(By.XPATH, '//*[@id="Field-cvcInput"]').send_keys("100")
     driver.switch_to.default_content()
     sleep(5)
 
-    # ClickOnPayNow
-    driver.find_element(By.ID, 'tuna-card-pay-button').click()
-    sleep(35)
+    # Click On Pay Now
+    driver.find_element(By.XPATH, '//span[normalize-space()="Pay Now"]').click()
+    sleep(15)
 
     driver.quit()
     print('Successfull Payment')
