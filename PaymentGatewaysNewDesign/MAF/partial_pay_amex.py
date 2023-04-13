@@ -10,25 +10,27 @@ def test_qr():
     global driver
     driver = webdriver.Chrome()
     driver.maximize_window()
-    location = ('https://app-staging.qlub.cloud/qr/ae/dummyMAFSezai/5/_/_/c28039f53e')
+    location = ('https://app-staging.qlub.cloud/qr/ae/dummyMAFSezai/27/_/_/318779157f')
     driver.get(location)
     sleep(10)
 
-    #fetchOrder
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
     sleep(10)
 
-    #SplitBill
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[2]/div/div[2]/div[2]/button[1]').click()
+    # SplitBill
+    # Split
+    driver.find_element(By.XPATH, '//span[@class="wrapper"][.="Split bill"]').click()
     sleep(3)
-
-    driver.find_element(By.XPATH,'//*[@id="select-custom"]').click()
+    # ClickCustom
+    driver.find_element(By.ID, 'select-custom').click()
     sleep(3)
-
-    driver.find_element(By.XPATH,'//*[@id="fullWidth"]').send_keys('5')
-    sleep(3)
-    driver.find_element(By.ID,'split-bill').click()
-    sleep(2)
+    # AddAmount
+    driver.find_element(By.XPATH, '//*[@id="fullWidth"]').send_keys('5')
+    sleep(4)
+    # ConfirmSplitt
+    driver.find_element(By.ID, 'split-bill').click()
+    sleep(5)
 
 
 
@@ -46,6 +48,10 @@ def test_qr():
     driver.find_element(By.NAME,'securityCode').send_keys("1234")
     sleep(2)
 
+    # ScrollDownPage
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    sleep(3)
+
     # Click On Pay Now
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[5]/div/button').click()
+    driver.find_element(By.XPATH, '//span[normalize-space()="Pay Now"]').click()
     sleep(35)

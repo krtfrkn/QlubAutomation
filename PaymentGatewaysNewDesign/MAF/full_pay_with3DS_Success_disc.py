@@ -14,8 +14,8 @@ def test_qr():
     driver.get(location)
     sleep(10)
 
-    #fetchOrder
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div/div[2]/main/div/div/div[3]/button[1]').click()
+    # fetchOrder
+    driver.find_element(By.XPATH, '//span[@class="wrapper"]/span').click()
     sleep(10)
 
     #OpencardOption
@@ -32,14 +32,18 @@ def test_qr():
     driver.find_element(By.NAME,'securityCode').send_keys("222")
     sleep(2)
 
+    # ScrollDownPage
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+    sleep(3)
+
     # Click On Pay Now
-    driver.find_element(By.XPATH,'//*[@id="__next"]/div[2]/div/div/div/div[2]/div[1]/div[2]/main/div/div/div[5]/div/div/div[4]/div[5]/div/button').click()
-    sleep(35)
+    driver.find_element(By.XPATH, '//span[normalize-space()="Pay Now"]').click()
+    sleep(30)
 
     driver.switch_to.frame(driver.find_element(By.ID,'simulatorFrame'))
     driver.find_element(By.XPATH, '//*[@id="ContainerContent"]/form/div[2]/button').click()
     driver.switch_to.default_content()
-    sleep(35)
+    sleep(15)
 
 
 
