@@ -58,7 +58,7 @@ def test_tuna():
 
     #ClickOnPayNow
     driver.find_element(By.ID,'tuna-card-pay-button').click()
-    sleep(35)
+    sleep(15)
 
     driver.quit()
     print('Successfull Payment')
