@@ -13,7 +13,7 @@ def test_tuna():
     driver.maximize_window()
     location = ('https://app-staging.qlub.cloud/qr/br/dummyTunaSezai/3/_/_/01c143952a')
     driver.get(location)
-    sleep(9)
+    sleep(12)
 
     #fetchOrder
     driver.find_element(By.XPATH,'//span[@class="wrapper"]/span').click()
@@ -39,7 +39,7 @@ def test_tuna():
 
     #ClickOnPayNow
     driver.find_element(By.ID,'tuna-card-pay-button').click()
-    sleep(35)
+    sleep(15)
 
     driver.quit()
     print('Successfull Payment')
