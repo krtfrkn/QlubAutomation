@@ -1,0 +1,9 @@
+{
+    "visa_card": "4242424242424242",
+    "master_card": "5555555555554444",
+    "iframe_element": "(//iframe)[3]",
+    "expired_date": "1030",
+    "cvc": "100",
+    "success_message": "Payment was successful!",
+    "restaurant_unique": "dummyStripeSezai"
+}
