@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install*)",
+      "Bash(npx playwright install*)",
+      "Bash(npx playwright test*)",
+      "Bash(tsh *)",
+      "Bash(node *)",
+      "Bash(ls *)",
+      "Bash(mkdir *)",
+      "Bash(pkill *)",
+      "Bash(pgrep *)",
+      "Bash(open *)",
+      "Bash(cd *)",
+      "Write",
+      "Edit",
+      "Read"
+    ]
+  }
+}
